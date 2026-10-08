@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-const jwtSecret = process.env.JWT_SECRET;
+const jwtSecret = process.env.TOKEN_KEY;
 
 export const verifytoken = async (req, res, next) => {
     try {
@@ -33,4 +33,3 @@ export const verifytoken = async (req, res, next) => {
         });
     }
 };
-
